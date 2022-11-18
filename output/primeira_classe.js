@@ -8,6 +8,9 @@ class Pessoa {
         this.idade = idade;
         this.altura = altura;
     }
+    setNome(nome) {
+        this.nome = nome;
+    }
     toString() {
         return `A pessoa ${this.nome} tem ${this.idade} anos e mede ${this.altura} de altura.`;
     }
