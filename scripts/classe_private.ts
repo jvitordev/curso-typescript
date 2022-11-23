@@ -34,6 +34,13 @@ class Banco {
 
 class Banco24Horas extends Banco {
 
+    public nome: string;
+
+    constructor(nome: string) {
+        super();
+        this.nome = nome;
+    }
+
     sacar(qtd: number) {
 
         return this.sacarDoCaixa(qtd);
@@ -43,6 +50,9 @@ class Banco24Horas extends Banco {
 }
 
 const nubank = new Banco();
-const banco24horas = new Banco24Horas();
+const banco24horas = new Banco24Horas("C6");
 
-banco24horas.sacar(2500);
+const saldo: string | number = banco24horas.sacar(2500);
+let nomeBanco: string = banco24horas.nome;
+
+console.log(nomeBanco + ": " + saldo);
