@@ -1,10 +1,4 @@
-function mostrarMensagem(texto: string | number | object): boolean {
-
-    console.log(texto);
-
-    return true;
-
-}
+import { mostrarMensagem } from "./funcoes/funcoes";
 
 console.log(mostrarMensagem("Hcode"));
 console.log(mostrarMensagem(100));

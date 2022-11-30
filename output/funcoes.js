@@ -1,11 +1,9 @@
 "use strict";
-function mostrarMensagem(texto) {
-    console.log(texto);
-    return true;
-}
-console.log(mostrarMensagem("Hcode"));
-console.log(mostrarMensagem(100));
-console.log(mostrarMensagem({ url: "https://hcode.com.br" }));
+Object.defineProperty(exports, "__esModule", { value: true });
+const funcoes_1 = require("./funcoes/funcoes");
+console.log((0, funcoes_1.mostrarMensagem)("Hcode"));
+console.log((0, funcoes_1.mostrarMensagem)(100));
+console.log((0, funcoes_1.mostrarMensagem)({ url: "https://hcode.com.br" }));
 const show = (codigo) => {
     return new Date();
 };
