@@ -12,6 +12,7 @@
     "noImplicitAny": true,    
     "esModuleInterop": true,                      /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
     "skipLibCheck": true,                                /* Skip type checking all .d.ts files. */
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true
   }
 }
