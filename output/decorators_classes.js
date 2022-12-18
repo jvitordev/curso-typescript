@@ -6,19 +6,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const utils_1 = require("./utils");
-let PrimeiraClasse = class PrimeiraClasse {
-    constructor() { }
-};
-PrimeiraClasse = __decorate([
-    utils_1.debug
-], PrimeiraClasse);
-let SegundaClasse = class SegundaClasse {
-    constructor() { }
-};
-SegundaClasse = __decorate([
-    utils_1.log
-], SegundaClasse);
+var utils_1 = require("./utils");
+var PrimeiraClasse = (function () {
+    function PrimeiraClasse() {
+    }
+    PrimeiraClasse = __decorate([
+        utils_1.debug
+    ], PrimeiraClasse);
+    return PrimeiraClasse;
+}());
+var SegundaClasse = (function () {
+    function SegundaClasse() {
+    }
+    SegundaClasse = __decorate([
+        utils_1.log
+    ], SegundaClasse);
+    return SegundaClasse;
+}());
 console.log(new PrimeiraClasse());
 console.log(new SegundaClasse());
 //# sourceMappingURL=decorators_classes.js.map

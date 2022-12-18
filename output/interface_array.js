@@ -1,16 +1,16 @@
 "use strict";
-const frontEnd = {
+var frontEnd = {
     nome: "Front-End",
     id: 1
 };
-const backEnd = {
+var backEnd = {
     nome: "Back-End",
     id: 2
 };
-let menu = {
+var menu = {
     categorias: [frontEnd, backEnd]
 };
-let minhasTarefas;
+var minhasTarefas;
 minhasTarefas = [
     "Estudar TypeScript",
     "Estudar JavaScript",

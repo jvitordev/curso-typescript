@@ -1,6 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class Notificacao {
-}
+var Notificacao = (function () {
+    function Notificacao() {
+    }
+    return Notificacao;
+}());
 exports.default = Notificacao;
 //# sourceMappingURL=Notificacao.js.map

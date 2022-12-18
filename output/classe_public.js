@@ -1,14 +1,14 @@
 "use strict";
-class Veiculo {
-    cor;
-    constructor(cor) {
+var Veiculo = (function () {
+    function Veiculo(cor) {
         this.cor = cor;
     }
-    tentarAbrirPorta() {
+    Veiculo.prototype.tentarAbrirPorta = function () {
         return false;
-    }
-}
-const carro = new Veiculo("Branco");
+    };
+    return Veiculo;
+}());
+var carro = new Veiculo("Branco");
 carro.cor = "Preto";
 console.log(carro.cor);
 console.log(carro.tentarAbrirPorta());

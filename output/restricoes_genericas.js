@@ -1,6 +1,6 @@
 "use strict";
 function mostrarQuantidadeTotal(valor) {
-    console.log(`Total: ${valor.length}`);
+    console.log("Total: ".concat(valor.length));
     return valor;
 }
 console.log(mostrarQuantidadeTotal([10, 20]));

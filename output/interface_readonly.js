@@ -1,5 +1,5 @@
 "use strict";
-const curso = {
+var curso = {
     titulo: "TypeScript",
     preco: 5000,
     cargaHoraria: 10,

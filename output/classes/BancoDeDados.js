@@ -1,21 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BancoDeDados = void 0;
-class BancoDeDados {
-    ip;
-    usuario;
-    senha;
-    tipoBanco;
-    static LOCAL = "127.0.0.1";
-    static TIPO_MYSQL = "MySQL";
-    static TIPO_SQLSERVER = "SQL Server";
-    constructor(ip, usuario, senha, tipoBanco) {
+var BancoDeDados = (function () {
+    function BancoDeDados(ip, usuario, senha, tipoBanco) {
         this.ip = ip;
         this.usuario = usuario;
         this.senha = senha;
         this.tipoBanco = tipoBanco;
     }
-    static factory(parametros) {
+    BancoDeDados.factory = function (parametros) {
         if (![
             BancoDeDados.TIPO_MYSQL,
             BancoDeDados.TIPO_SQLSERVER
@@ -23,7 +16,11 @@ class BancoDeDados {
             throw new Error("Tipo de banco incorreto");
         }
         return new BancoDeDados(parametros.ip, parametros.usuario, parametros.senha, parametros.tipoBanco);
-    }
-}
+    };
+    BancoDeDados.LOCAL = "127.0.0.1";
+    BancoDeDados.TIPO_MYSQL = "MySQL";
+    BancoDeDados.TIPO_SQLSERVER = "SQL Server";
+    return BancoDeDados;
+}());
 exports.BancoDeDados = BancoDeDados;
 //# sourceMappingURL=BancoDeDados.js.map

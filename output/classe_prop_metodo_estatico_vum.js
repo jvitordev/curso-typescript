@@ -1,19 +1,12 @@
 "use strict";
-class BancoDeDados2 {
-    ip;
-    usuario;
-    senha;
-    tipoBanco;
-    static LOCAL = "127.0.0.1";
-    static TIPO_MYSQL = "MySQL";
-    static TIPO_SQLSERVER = "SQL Server";
-    constructor(ip, usuario, senha, tipoBanco) {
+var BancoDeDados2 = (function () {
+    function BancoDeDados2(ip, usuario, senha, tipoBanco) {
         this.ip = ip;
         this.usuario = usuario;
         this.senha = senha;
         this.tipoBanco = tipoBanco;
     }
-    static factory(parametros) {
+    BancoDeDados2.factory = function (parametros) {
         if (![
             BancoDeDados2.TIPO_MYSQL,
             BancoDeDados2.TIPO_SQLSERVER
@@ -21,9 +14,13 @@ class BancoDeDados2 {
             throw new Error("Tipo de banco incorreto");
         }
         return new BancoDeDados2(parametros.ip, parametros.usuario, parametros.senha, parametros.tipoBanco);
-    }
-}
-const conexaoBanco = BancoDeDados2.factory({
+    };
+    BancoDeDados2.LOCAL = "127.0.0.1";
+    BancoDeDados2.TIPO_MYSQL = "MySQL";
+    BancoDeDados2.TIPO_SQLSERVER = "SQL Server";
+    return BancoDeDados2;
+}());
+var conexaoBanco = BancoDeDados2.factory({
     tipoBanco: BancoDeDados2.TIPO_MYSQL,
     senha: "root",
     usuario: "root",

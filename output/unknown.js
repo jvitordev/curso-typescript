@@ -1,12 +1,12 @@
 "use strict";
-let resultado;
+var resultado;
 resultado = {
     sucesso: true
 };
 resultado = "Deu tudo certo. OK!";
 resultado = 200;
 console.log("==============");
-const informacao = 150;
-const informacaoDesconhecida = 250;
-const primeiroNumero = informacao;
+var informacao = 150;
+var informacaoDesconhecida = 250;
+var primeiroNumero = informacao;
 //# sourceMappingURL=unknown.js.map

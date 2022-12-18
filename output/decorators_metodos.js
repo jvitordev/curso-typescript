@@ -6,18 +6,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 function decoratorMetodo(target, propertyKey, descriptor) {
-    descriptor.value = (...args) => {
-        return args.map(item => item.toLowerCase());
+    descriptor.value = function () {
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i] = arguments[_i];
+        }
+        return args.map(function (item) { return item.toLowerCase(); });
     };
 }
-class TratarMensagem {
-    dizerMensagem(...mensagens) {
-        return mensagens;
+var TratarMensagem = (function () {
+    function TratarMensagem() {
     }
-}
-__decorate([
-    decoratorMetodo
-], TratarMensagem.prototype, "dizerMensagem", null);
-const instancia = new TratarMensagem();
+    TratarMensagem.prototype.dizerMensagem = function () {
+        var mensagens = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            mensagens[_i] = arguments[_i];
+        }
+        return mensagens;
+    };
+    __decorate([
+        decoratorMetodo
+    ], TratarMensagem.prototype, "dizerMensagem", null);
+    return TratarMensagem;
+}());
+var instancia = new TratarMensagem();
 console.log(instancia.dizerMensagem("Olá", "Seja bem-vindo", "Hcode"));
 //# sourceMappingURL=decorators_metodos.js.map
