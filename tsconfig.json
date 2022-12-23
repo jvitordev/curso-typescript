@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES5",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "target": "ESNext",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "module": "CommonJS",                                /* Specify what module code is generated. */
-    "lib": ["DOM", "ES2016"],
+    "lib": ["DOM", "ES2020"],
     "allowJs": true,    
     "sourceMap": true,                               /* Specify a file that bundles all outputs into one JavaScript file. If 'declaration' is true, also designates a file that bundles all .d.ts output. */
     "outDir": "./output",                                   /* Specify an output folder for all emitted files. */
@@ -13,6 +13,7 @@
     "esModuleInterop": true,                      /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
     "skipLibCheck": true,                                /* Skip type checking all .d.ts files. */
     "forceConsistentCasingInFileNames": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   }
 }
