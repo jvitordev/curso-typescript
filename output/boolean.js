@@ -1,9 +1,9 @@
 "use strict";
-var admin = true;
+let admin = true;
 admin = Boolean(undefined);
 console.log(admin);
-var senha = "123456789";
-var senhaSegura;
+let senha = "123456789";
+let senhaSegura;
 senhaSegura = (senha.length > 8);
 console.log(senhaSegura);
 //# sourceMappingURL=boolean.js.map

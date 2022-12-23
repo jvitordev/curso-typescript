@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var BancoDeDados_1 = require("./classes/BancoDeDados");
-var conexaoBanco = BancoDeDados_1.BancoDeDados.factory({
+const BancoDeDados_1 = require("./classes/BancoDeDados");
+const conexaoBanco = BancoDeDados_1.BancoDeDados.factory({
     tipoBanco: BancoDeDados_1.BancoDeDados.TIPO_MYSQL,
     senha: "root",
     usuario: "root",

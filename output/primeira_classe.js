@@ -1,20 +1,22 @@
 "use strict";
-var Pessoa = (function () {
-    function Pessoa(nome, idade, altura) {
+class Pessoa {
+    nome;
+    idade;
+    altura;
+    constructor(nome, idade, altura) {
         this.nome = nome;
         this.idade = idade;
         this.altura = altura;
     }
-    Pessoa.prototype.setNome = function (nome) {
+    setNome(nome) {
         this.nome = nome;
-    };
-    Pessoa.prototype.toString = function () {
-        return "A pessoa ".concat(this.nome, " tem ").concat(this.idade, " anos e mede ").concat(this.altura, " de altura.");
-    };
-    return Pessoa;
-}());
-var ronaldo = new Pessoa("Ronaldo Braz", 30, 1.85);
-var marcus = new Pessoa("Marcus Ribeiro", 19, 2);
+    }
+    toString() {
+        return `A pessoa ${this.nome} tem ${this.idade} anos e mede ${this.altura} de altura.`;
+    }
+}
+const ronaldo = new Pessoa("Ronaldo Braz", 30, 1.85);
+const marcus = new Pessoa("Marcus Ribeiro", 19, 2);
 ronaldo.nome = "Ronaldo";
 console.log("Pessoa: " + ronaldo);
 console.log("Pessoa: " + marcus);

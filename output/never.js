@@ -2,7 +2,7 @@
 function showError(message) {
     throw new Error(message);
 }
-var n = 0;
+let n = 0;
 function loopInfinito() {
     while (true) {
         console.log(n++);

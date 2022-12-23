@@ -1,20 +1,22 @@
 "use strict";
-var Pedido = (function () {
-    function Pedido(produto, valorTotal, previsaoEntrega) {
+class Pedido {
+    produto;
+    valorTotal;
+    previsaoEntrega;
+    id = 1n;
+    constructor(produto, valorTotal, previsaoEntrega) {
         this.produto = produto;
         this.valorTotal = valorTotal;
         this.previsaoEntrega = previsaoEntrega;
-        this.id = 1n;
     }
-    Pedido.prototype.getId = function () {
+    getId() {
         return this.id;
-    };
-    Pedido.prototype.toString = function () {
+    }
+    toString() {
         return "id: " + this.id;
-    };
-    return Pedido;
-}());
-var meuPedido = new Pedido("TV 64 polegadas", 2000, new Date("2021-05-01"));
+    }
+}
+const meuPedido = new Pedido("TV 64 polegadas", 2000, new Date("2021-05-01"));
 console.log(meuPedido);
 console.log(meuPedido.toString());
 //# sourceMappingURL=classe_construtor.js.map

@@ -1,6 +1,6 @@
 "use strict";
-var novoRegistro = new Autenticacao.LoginRegistro();
-var resultadoRegistro = novoRegistro.registro({
+const novoRegistro = new Autenticacao.LoginRegistro();
+const resultadoRegistro = novoRegistro.registro({
     nome: "Djalma",
     email: "dj@hcode.com.br",
     senha: "djalmaroot",

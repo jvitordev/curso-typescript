@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "@types/node": "^18.11.9"
+    "@types/node": "^18.11.9",
+    "@types/reflect-metadata": "^0.1.0",
+    "mathjs": "^11.5.0",
+    "reflect-metadata": "^0.1.13"
   }
 }

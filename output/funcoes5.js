@@ -3,11 +3,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var mostrarMensagem_1 = __importDefault(require("./funcoes/mostrarMensagem"));
+const mostrarMensagem_1 = __importDefault(require("./funcoes/mostrarMensagem"));
 console.log((0, mostrarMensagem_1.default)("Hcode"));
 console.log((0, mostrarMensagem_1.default)(100));
 console.log((0, mostrarMensagem_1.default)({ url: "https://hcode.com.br" }));
-var show = function (codigo) {
+const show = (codigo) => {
     return new Date();
 };
 //# sourceMappingURL=funcoes5.js.map

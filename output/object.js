@@ -1,5 +1,5 @@
 "use strict";
-var configuracaoServidor = {
+let configuracaoServidor = {
     servidor: "Microsoft Azure",
     ip: "127.0.0.1",
     senha: "654321"

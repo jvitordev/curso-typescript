@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var MeiosDeNotificacao_1 = require("./classes/MeiosDeNotificacao");
+const MeiosDeNotificacao_1 = require("./classes/MeiosDeNotificacao");
 new MeiosDeNotificacao_1.Email().enviar({
     nome: "Joao",
     email: "joao@hcode.com.br",

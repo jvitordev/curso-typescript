@@ -1,5 +1,5 @@
 "use strict";
-var endereco;
+let endereco;
 endereco = {
     logradouro: "Av. Paulista",
     numero: 1000,

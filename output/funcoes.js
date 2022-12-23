@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var funcoes_1 = require("./funcoes/funcoes");
+const funcoes_1 = require("./funcoes/funcoes");
 console.log((0, funcoes_1.mostrarMensagem)("Hcode"));
 console.log((0, funcoes_1.mostrarMensagem)(100));
 console.log((0, funcoes_1.mostrarMensagem)({ url: "https://hcode.com.br" }));
-var show = function (codigo) {
+const show = (codigo) => {
     return new Date();
 };
 //# sourceMappingURL=funcoes.js.map

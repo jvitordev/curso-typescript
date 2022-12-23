@@ -1,5 +1,5 @@
 "use strict";
-var joao = {
+const joao = {
     email: "joao@hcode.com.br",
     id: 1,
     nome: "João Rangel",

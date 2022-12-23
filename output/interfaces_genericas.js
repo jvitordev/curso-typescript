@@ -1,15 +1,15 @@
 "use strict";
-var texto = {
+const texto = {
     valor: "hcode",
-    realizarProcessamento: function (argumento) {
+    realizarProcessamento(argumento) {
         return argumento.toUpperCase();
     }
 };
 console.log(texto.valor);
 console.log(texto.realizarProcessamento("hcode treinamentos"));
-var numero = {
+const numero = {
     valor: 10,
-    realizarProcessamento: function (v) {
+    realizarProcessamento(v) {
         return v * v;
     }
 };
